@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+ }
+
+ p,
+li,
+a,
+label {
+  font-family: 'Urbanist', sans-serif;
+  font-size: 1.8rem;
+  letter-spacing: 0.1rem;
+  font-weight: 400;
+  color:  #504e4d;
+  line-height: 1.5;
+}
+
+ li{
+    list-style: none;
+ }
+ a{
+    text-decoration: none;
+ }
+
+ .container{
+   
+   max-width: 142rem;
+   margin: 0 auto;
+   padding: 9.6rem 2.4rem;
+ }
+ :root {
+    --main-color: #0062ff;
+    --supporting-color: #ebf3fe;
+    --font-color: #424242;
+    /* --bg-color: #ffffff; */
+    --bg-color: #f7fcff;
+    --heading-color: #000a19;
+    --hero-heading-color: #003b99;
+    --white-color: #ffffff;
+    --para-color: #504e4d;
+    --bnt-hover-bg-color: #003b99;
+    --btn-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    --footer-bg-color: #040d12;
+  }
+
+ /* Navbar section starts */
+ .section-navbar {
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+      rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  }
+
+  
+  .navbar-brand {
+    perspective: 1000px;
+    display: inline-block;
+}
+.navbar-brand a {
+    display: inline-block;
+    text-decoration: none;
+    color: #3a609e;
+    font-size: 3rem;
+    font-weight: 600;
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    transition: transform 0.5s;
+}
+.navbar-brand:hover a {
+    transform: rotateY(180deg);
+}
+
+  .section-navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.8rem 2.4rem;
+  }
+  
+  
+  .section-navbar .navbar ul {
+    display: flex;
+    gap: 3.2rem;
+    /* text-transform: capitalize; */
+  
+    & li a {
+      color: var(--heading-color);
+      text-transform: uppercase;
+      font-weight: 600;
+      font-size: 1.6rem;
+      display: inline-block;
+      position: relative;
+  
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -0.3rem;
+        left: 0;
+        width: 0;
+        border-bottom: 0.2rem solid var(--main-color);
+        transition: all 0.3s linear;
+        -webkit-transition: all 0.3s linear;
+        -moz-transition: all 0.3s linear;
+        -ms-transition: all 0.3s linear;
+        -o-transition: all 0.3s linear;
+      }
+    }
+  
+    & li a:hover:after {
+      width: 100%;
+    }
+  }
+
+
+
+ /* Navbar section end */
+
